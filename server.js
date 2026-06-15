@@ -44,7 +44,7 @@ app.get('/tiles/:z/:x/:y.png', async (req, res) => {
   const wmsUrl =
     'https://eagri.cz/public/app/wms/plpis.fcgi' +
     '?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap' +
-    '&LAYERS=LPIS_FB4&STYLES=' +
+    '&LAYERS=LPIS_FB4,LPIS_FB4_KOD&STYLES=,' +
     '&FORMAT=image/png&TRANSPARENT=TRUE' +
     '&SRS=EPSG:4326' +
     `&BBOX=${lonMin},${latMin},${lonMax},${latMax}` +
@@ -89,7 +89,7 @@ app.get('/debug/:z/:x/:y', async (req, res) => {
   const wmsUrl =
     'https://eagri.cz/public/app/wms/plpis.fcgi' +
     '?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap' +
-    '&LAYERS=LPIS_FB4&STYLES=' +
+    '&LAYERS=LPIS_FB4,LPIS_FB4_KOD&STYLES=,' +
     '&FORMAT=image/png&TRANSPARENT=TRUE' +
     '&SRS=EPSG:4326' +
     `&BBOX=${lonMin},${latMin},${lonMax},${latMax}` +
