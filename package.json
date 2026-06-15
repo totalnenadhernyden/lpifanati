@@ -1,17 +1,11 @@
 {
   "name": "lpis-xyz-proxy",
   "version": "1.0.0",
-  "description": "Converts XYZ tile requests to LPIS WMS GetMap calls for use in QGroundControl",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
+  "scripts": { "start": "node server.js" },
   "dependencies": {
     "express": "^4.19.2",
-    "node-fetch": "^2.7.0",
-    "sharp": "^0.33.4"
+    "node-fetch": "^2.7.0"
   },
-  "engines": {
-    "node": ">=18"
-  }
+  "engines": { "node": ">=18" }
 }
